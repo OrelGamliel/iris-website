@@ -16,16 +16,6 @@ import { UpdatesComponent } from './updates/updates.component';
 import { LightboxModule } from 'ngx-lightbox';
 import { Routes , RouterModule } from '@angular/router';
 
-const appRoutes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'firstGenration', component: FirstGenerationComponent},
-  { path: 'family-tree', component: FamilyTreeComponent},
-  { path: 'history', component: HistoryComponent},
-  { path: 'exodus', component: ExodusComponent},
-  { path: 'acclimation-in-israel', component: AcclimationInIsraelComponent},
-  { path: 'conversations-between-generations', component: ConversationsBetweenGenerationsComponent},
-  { path: 'updates', component: UpdatesComponent},
-];
 
 @NgModule({
   declarations: [
@@ -42,10 +32,9 @@ const appRoutes: Routes = [
     UpdatesComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     LightboxModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
