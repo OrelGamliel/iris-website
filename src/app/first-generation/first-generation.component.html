@@ -1,0 +1,44 @@
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <h1>דור ראשון </h1>
+            <p>הדור הראשון הוא הדור שבחר לבנות ולשקם את חייו במדינת ישראל, דור אשר חווה במפגש שלו עם המדינה ערבוב של רגשות מסוגים שונים: שכול, ייאוש, אשמה, שמחה, אושר וגאולה. אך למרות הכל, בני הדור הראשון בזכות החיוניות המופלאה שלהם משתלבים ברקמת החיים המופלאה במדינת ישראל והופכים לחלק מהחברה הישראלית.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-3" *ngFor="let img of imageObject; let i = index">
+            <div class="card">
+                <img [src]="img.thumbImage || img.image"  />
+                <div class="card-body">
+                    <h4 class="card-title">{{ img.title }}</h4>
+                    <a (click)="open(i)" class="btn btn-outline-secondary">צפה בתמונה</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="centered-thing embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ChfjO860zwg" allowfullscreen></iframe>
+                 </div>    
+                <div class="card-body">
+                    <h4 class="card-title">אברהם מדהלה מתראיין בפסטיבל מספרי סיפורים בנהחיית יוסי אלפי
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="centered-thing embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fb38B6WjQKI" allowfullscreen></iframe>
+                 </div>    
+                <div class="card-body">
+                    <h4 class="card-title">ערב הוקרה לסופרים - במועצה המקומית קריית עקרון</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

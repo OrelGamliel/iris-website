@@ -1,0 +1,18 @@
+        /* Modify the background color */ 
+          
+        .navbar { 
+            background-color: beige !important;
+        } 
+        /* Modify brand and text color */ 
+          
+        .navbar .navbar-brand
+         { 
+            color: black; 
+        } 
+        .navbar .navbar-brand:hover
+        { 
+           color: black; 
+       } 
+       .navbar .navbar-nav li a:hover{
+           color: black;
+       }

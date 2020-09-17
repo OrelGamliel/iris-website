@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+/* START bootstrap rtl */
+
+body{
+    text-align: right;
+}
+
+/* END bootstrap rtl */
+
+.jumbotron{
+    background-color: rgb(248, 248, 234);
+}
+
+.carousel-control-next-icon,.carousel-control-prev-icon  {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+}
+.padding {
+    padding-bottom: 2rem;
+  }

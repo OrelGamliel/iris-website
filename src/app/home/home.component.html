@@ -1,0 +1,81 @@
+
+
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i.imgur.com/bDHCIUK.jpg">
+            <div class="carousel-caption">
+                <h1 style="font-size:5vw;" class="display-2">דור שני ודור שלישי-היורשים</h1>
+                <h4 style="font-size:2vw;">"עוצמתו של בן הדור השני הן התובנות שמגיעות מהלב ומהראש על אירועים שהתרחשו אצל הוריינו, אירועים שבהם לא נכחנו, לא שמענו ולא ראינו, אך למרות הכל ירשנו אותם ואנחנו זועקים לאחרים-לעולם לא נשכח!!!".</h4>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    
+          <hr>
+          <div class="container-fluid padding">
+          <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+              <h2 class="who">מי אני?</h2>
+              <hr>
+                <p>שמי איריס מדהלה גמליאל, מפיקת אירועים וכנסים, בעברי הייתי אשת חינוך, מגיל שנתיים(כן מגיל שנתיים!!!) אני חוקרת עצמאית של מורשת אבותיי,</p>
+                <p>לפני כשלוש שנים הצטרפתי למסלול מחקרי באוניברסיטת בר אילן בו אני חוקרת את "הקול" של בני הדור השני להגירה.</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+              <img src="https://i.imgur.com/Qnml6rj.jpg" class="img-fluid rounded-circle">
+            </div>
+          </div>
+          </div>
+          
+          <hr>
+          <!--- Fixed background -->
+          <figure>
+            <div class="fixed-wrap">
+              <div id="fixed">
+              </div>
+            </div>
+          </figure>
+          
+          
+          <!--- Two Column Section -->
+          <div class="container-fluid padding">
+          <div class="row padding">
+            <div class="col-lg-6">
+              <img src="https://i.imgur.com/KgDtruC.jpg" class="rounded img-fluid">
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <h2 class="who">קצת עוד עליי..</h2>
+              <hr>
+              <p>
+                במהלך חיי הייתי יזמתי והפקתי שלושה אירועים משפחתיים שנושאם "מפעל חיים". בנוסף הייתי חלק מרכזי בתכנון ובהוצאה לפועל של שלושה כנסים משפחתיים שניים של משפחתו של  אבי וכנס אחד של משפחתה של אימי, וכן יזמתי כנס בשיתוף מרכז מורשת והאגודה לטיפוח שנושאו היה להשמיע את קולו הייחודי של בני הדור השני והשלישי.          
+                <p>
+                  כל סיפור חיי מתחיל בגיל שנתיים כשקיבלתי את ההחלטה במלחמת ששת הימים שמהיום והלאה אני השומרת של הגינה של אבא, בימים אלו יוצא לאור ספרי ,ספר זיכרונות אוטוביוגרפיה בו אני מתעדת כיצד חיבר אותי אבי למורשת ארץ מוצאו.             <br>
+               <hr>
+                </div>
+                <hr>
+                <div class="col-md-12 col-lg-12">
+                <h2 class="col-md-12 col-lg-12">ממפעל חיי...</h2>
+                <div class="row padding">
+                  <div class="col-md-3" *ngFor="let img of imageObject; let i = index">
+                    <div class="card">
+                        <img [src]="img.thumbImage || img.image"  />
+                        <div class="card-body">
+                            <h4 class="card-title">{{ img.title }}</h4>
+                            <a (click)="open(i)" class="btn btn-outline-secondary">צפה בתמונה</a>
+                        </div>
+                    </div>
+                </div>
+
+              </div>      
+            </div>
+    
+          </div>
+          </div>
+    
+    
+    
+    
+        
+    

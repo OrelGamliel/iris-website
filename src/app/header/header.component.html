@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+    <i routerLink ="/" class="navbar-brand fas fa-tree" routerLink ="/"></i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-tabs">
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >
+          <a class="nav-link" routerLink ="/">מי אני <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item"  routerLinkActive="active">
+          <a class="nav-link" routerLink ="/firstGenration">דור ראשון</a>
+        </li>
+        <li class="nav-item " routerLinkActive="active">
+          <a class="nav-link" routerLink ="/family-tree">אילנות יוחסין</a>
+        </li>
+        <li class="nav-item " routerLinkActive="active">
+            <a class="nav-link" routerLink ="/history">ההיסטוריה של הדורות הקודמים</a>
+          </li>
+          <li class="nav-item " routerLinkActive="active">
+            <a class="nav-link" routerLink ="/exodus">מסע העלייה</a>
+          </li>
+          <li class="nav-item " routerLinkActive="active">
+            <a class="nav-link" routerLink ="/acclimation-in-israel">ההתאקלמות בארץ ישראל</a>
+          </li>
+          <li class="nav-item " routerLinkActive="active">
+            <a class="nav-link" routerLink ="/conversations-between-generations">דו-שיח בין דור ראשון, שני ושלישי</a>
+          </li>     
+          <li class="nav-item " routerLinkActive="active">
+            <a class="nav-link" routerLink ="/updates">כנסי מורשת ואירועים משפחתיים  </a>
+          </li>               
+      </ul>
+    </div>
+  </nav>
