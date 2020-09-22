@@ -61,7 +61,8 @@ export class HomeComponent implements OnInit {
     
     private _album = [];
     
-    constructor(private _lightbox: Lightbox) {
+    constructor(
+      private _lightbox: Lightbox) {
       for (let i = 0; i < 7; i++) {
         const src = this.imageObject[i].image
         const caption = this.imageObject[i].title

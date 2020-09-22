@@ -26,6 +26,7 @@
     "@angular/router": "~9.0.3",
     "@nguniversal/express-engine": "^9.0.2",
     "bootstrap": "^4.5.2",
+    "domino": "^2.1.6",
     "express": "^4.15.2",
     "ngx-lightbox": "^2.2.2",
     "rxjs": "~6.5.4",
